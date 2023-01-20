@@ -9,10 +9,11 @@ public:
     Car(); //Default Construcotr
     ~Car(); //Destructor
     Car(float amount);// Parametrized constructor 
+    Car(float amount, int pass);
     void FillFuel(float amount);
     void Accelerate();
     void Brake();
     void AddPassengers(int count);
-    void Dashboard();
+    void Dashboard() const;
     static void ShowCount();
 };
